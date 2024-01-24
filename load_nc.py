@@ -11,24 +11,16 @@ def load_nc_file(filepath):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+def read_poly():
+    import geopandas as gpd
+    shape = gpd.read_file(shp_file)
+    return
 
 
 
   def daniel_function_to_test_pull_request():
       return 0
+
 
 
 
