@@ -1,8 +1,11 @@
 import numpy as np
-import netCDF4 #Eva
+from netCDF4 import Dataset
+import matplotlib as plt  # cian
+import pandas as pd  # cian
 
 
-#Load data function
 
-def load_nc (path):
-    return netCDF4.Dataset(path)
+def load_nc_file(filepath):
+    filestruct = Dataset(filepath,'r')
+    return filestruct
+  
